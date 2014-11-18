@@ -7,8 +7,8 @@ makeCacheMatrix <- function(x = matrix()) {
         m <- NULL   ## reset matrix to NULL 
         
         set <- function(y) {
-                x <<- y
-                m <<- NULL
+                x <<- y                           ## save input matrix
+                m <<- NULL                        ## reset inverse matrix to NULL
         }
         
         get <- function() x                        ## Return value of original matrix
